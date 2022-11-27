@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="883f04f0-8984-4303-85de-bc1c4eb3463c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/abc/core/DriverManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/abc/utils/TestResultsListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MyStepdefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefs/TestStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/test.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/abc/core/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/abc/core/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/abc/utils/TestResultsListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/abc/utils/TestResultsListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +16,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -37,8 +39,8 @@
     "last_opened_file_path": "D:/android-automation-framework/src/test",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -47,6 +49,30 @@
       <recent name="D:\android-automation-framework\src\test\java" />
       <recent name="D:\android-automation-framework\src\main\java" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DriverManager" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="android-automation-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="abc.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="abc.core" />
+      <option name="MAIN_CLASS_NAME" value="abc.core.DriverManager" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.DriverManager" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
