@@ -1,4 +1,4 @@
-Feature: test
+Feature: Content First
 
-  Scenario: test first testcase binding with Step definition file
-    Given test step
+  Scenario: Navigate to home screen
+    Given I am on content first page
