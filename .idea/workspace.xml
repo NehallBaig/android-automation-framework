@@ -21,12 +21,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.DriverManager.executor": "Run",
     "Cucumber Java.Feature: test.executor": "Run",
     "Cucumber Java.Scenario: Navigate to home screen.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Nehal/Desktop/New folder (3)/android-automation-framework"
+    "last_opened_file_path": "C:/Users/Nehal/Desktop/New folder (3)/android-automation-framework",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -39,6 +43,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Cucumber Java.Feature: test">
+    <configuration name="DriverManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abcCompany.core.DriverManager" />
+      <module name="android-automation-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abcCompany.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/test.feature" />
@@ -80,6 +97,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Feature: test" />
+        <item itemvalue="Application.DriverManager" />
         <item itemvalue="Cucumber Java.Scenario: Navigate to home screen" />
       </list>
     </recent_temporary>
