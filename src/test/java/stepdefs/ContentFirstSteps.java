@@ -27,12 +27,12 @@ public class ContentFirstSteps {
     @When("launch application")
     public void launchApp() throws MalformedURLException, URISyntaxException {
 
-
-
         DriverManager manager = new DriverManager();
 
         AndroidDriver driver = manager.runTestsLocally("abc");
         driver.quit();
+
+        DriverManager.quitService();
 
     }
 

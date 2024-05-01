@@ -1,10 +1,25 @@
 package utils;
 
 
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
+
 import java.io.*;
 import java.util.*;
 
 public class Utility {
+
+
+    public static AppiumDriverLocalService startAppiumServer(String ipAddress, int port) {
+        AppiumServiceBuilder builder = new AppiumServiceBuilder();
+        builder.withIPAddress(ipAddress);
+        builder.usingPort(port);
+
+        AppiumDriverLocalService service = AppiumDriverLocalService.buildService(builder);
+        service.start();
+
+        return service;
+    }
 
     public static Properties readPropertiesFile(String filepath) {
         Properties prop = new Properties();
@@ -20,4 +35,3 @@ public class Utility {
     }
 
 }
-

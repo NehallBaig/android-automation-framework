@@ -10,8 +10,11 @@ import java.net.URISyntaxException;
 import java.util.*;
 
 
+import io.appium.java_client.service.local.AppiumDriverLocalService;
 import org.testng.annotations.*;
 import utils.Utility;
+
+import static utils.Utility.startAppiumServer;
 
 public class DriverManager {
 
@@ -22,6 +25,8 @@ public class DriverManager {
     static String apk_path = "";
     static String filePath = "";
     private static AndroidDriver driver;
+
+    public static AppiumDriverLocalService service;
 
     // @BeforeSuite(alwaysRun = true) // FOR TESTNG EXECUTION
     public static void setBuildParams() {
@@ -43,8 +48,16 @@ public class DriverManager {
         UiAutomator2Options options = new UiAutomator2Options();
         options.setDeviceName(prop.getProperty("androidDeviceName"));
         options.setApp(apk_path);
-        driver = new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(), options);
+
+        // Get IP address and port using properties
+        AppiumDriverLocalService appiumService = startAppiumServer("127.0.0.1", 4723);
+        driver = new AndroidDriver(appiumService.getUrl(), options);
+
         return driver;
+    }
+
+    public static void quitService(){
+        service.close();
     }
 
 }
