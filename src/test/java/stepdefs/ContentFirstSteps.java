@@ -15,8 +15,7 @@ public class ContentFirstSteps {
 
     private AndroidDriver driver;
 
-    public ContentFirstSteps(){
-
+    public ContentFirstSteps() {
     }
 
     @Given("I am on {} page")
@@ -25,15 +24,17 @@ public class ContentFirstSteps {
     }
 
     @When("launch application")
-    public void launchApp() throws MalformedURLException, URISyntaxException {
+    public void launchApp() throws InterruptedException {
 
-        DriverManager manager = new DriverManager();
+        try {
+            DriverManager manager = new DriverManager();
+            manager.runTestsLocally("abc");
 
-        AndroidDriver driver = manager.runTestsLocally("abc");
-        driver.quit();
-
-        DriverManager.quitService();
-
+            Thread.sleep(3000);
+            DriverManager.quitService();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 
 }
