@@ -9,15 +9,12 @@ import java.util.*;
 
 public class Utility {
 
+    private static AppiumDriverLocalService service;
 
     public static AppiumDriverLocalService startAppiumServer(String ipAddress, int port) {
-        AppiumServiceBuilder builder = new AppiumServiceBuilder();
-        builder.withIPAddress(ipAddress);
-        builder.usingPort(port);
-
-        AppiumDriverLocalService service = AppiumDriverLocalService.buildService(builder);
+        service = new AppiumServiceBuilder().withAppiumJS(new File("//usr//local//lib//node_modules//appium//build//lib//main.js"))
+                .withIPAddress(ipAddress).usingPort(port).build();
         service.start();
-
         return service;
     }
 
